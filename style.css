@@ -1,0 +1,67 @@
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('sky.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-inicial {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(8px);
+  padding: 40px 32px;
+  border-radius: 26px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: menuFadeIn 1.2s ease forwards;
+}
+
+.menu-inicial h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 38px;
+  color: #5071a3;
+  margin-bottom: 30px;
+}
+
+.menu-btn {
+  display: block;
+  text-decoration: none;
+  margin: 16px auto;
+  padding: 14px 26px;
+  border-radius: 22px;
+  font-family: 'Sacramento', cursive;
+  font-size: 22px;
+  color: white;
+  background: rgb(121, 160, 206);
+  box-shadow: 0 8px 18px rgb(55, 92, 150);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 12px 26px rgba(231 212 202);
+}
+
+@keyframes menuFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  
+}
+
+
+
+

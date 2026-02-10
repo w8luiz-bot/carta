@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Surpresa 💖</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  
+<div class="video-area">
+  <video autoplay loop muted playsinline>
+    <source src="eueela.mp4" type="video/mp4">
+  </video>
+</div>
+
+  <div class="container">
+  <div class="card">
+    <div class="footer-text">
+      <span class="song-line">
+        🎶You and I, we can make it if we try.
+      </span>
+      <p>
+        te amo, minha princesa 💕
+      </p>
+    </div>
+  </div>
+</div>
+
+      <a href="index.html" class="nav-btn">⬅ Voltar pra carta</a>
+    </div>
+  </div>
+
+  <div class="login-area">
+  <p class="login-text">Digite a senha para continuar 💖</p>
+  <p class="dica">
+    dica: seu primeiro buquê..
+  </p>
+
+  <input
+    type="password"
+    id="senhaFinal"
+    placeholder="Senha"
+    class="login-input"
+  >
+
+  <button class="enter-btn" onclick="verificarSenhaFinal()">
+    ir ->
+  </button>
+
+  <p id="erroSenha" class="erro-msg"></p>
+</div>
+
+<script>
+function verificarSenhaFinal() {
+  const senha = document.getElementById("senhaFinal").value;
+  const erro = document.getElementById("erroSenha");
+
+  const senhaCorreta = "251123";
+
+  if (senha === senhaCorreta) {
+    window.location.href = "index3.html";
+  } else {
+    erro.innerText = "Senha incorreta 😭";
+  }
+}
+</script>
+
+
+</body>
+</html>
+
+

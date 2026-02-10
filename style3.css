@@ -1,0 +1,93 @@
+#final-animation {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, #2a0033, #000);
+  overflow: hidden;
+}
+
+.coracao {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  font-size: 90px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.coracao.ativo {
+  animation: coracaoAnim 2.4s cubic-bezier(.25,1.4,.5,1) forwards;
+}
+
+@keyframes coracaoAnim {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  30% {
+    transform: translate(-50%, -50%) scale(1.4);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -65%) scale(0.25);
+    opacity: 0;
+  }
+}
+
+#fogos {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+.final-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.92);
+}
+
+.final-message p {
+  font-family: 'Sacramento', cursive;
+  font-size: 36px;
+  color: #ffd6ec;
+  text-align: center;
+
+  padding: 18px 30px;
+  border-radius: 22px;
+
+  background: rgba(255, 77, 109, 0.2);
+  border: 2px solid #ff4d6d;
+
+  box-shadow:
+    0 0 18px rgba(255, 77, 109, 0.35),
+    0 0 45px rgba(255, 77, 109, 0.25);
+}
+
+.final-message.show {
+  animation: showText 1.5s cubic-bezier(.2,.9,.3,1) forwards;
+}
+
+@keyframes showText {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -45%) scale(0.9);
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -52%) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+

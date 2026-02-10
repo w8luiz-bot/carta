@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carta</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Sacramento&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
+
+<div id="login">
+  <p style="
+  font-family: 'Sacramento', cursive;
+  font-size: 30px;
+  color: #ff4d6d;
+
+  border: 2px solid #ff4d6d;
+  border-radius: 30px;
+
+  padding: 8px 14px;
+  margin-top: 25px;
+  display: inline-block;
+  background: rgba(252, 252, 252, 0.513);
+
+">
+  Digite a senha para continuar 💖
+</p>
+
+
+  <input type="password" id="senha" placeholder="Qual a senha, mathielly ?">
+
+  <button class="enter-btn" onclick="verificarSenha()">
+    <span>Entrar 💖</span>
+  </button>
+
+  <p id="msg"></p>
+</div>
+
+<div id="conteudo" style="display: none;">
+  <div class="page">
+    <div class="container">
+
+      <input type="checkbox" id="toggle">
+
+      <div class="card">
+
+        <p class="subtitle">
+          Uma carta que eu faria mil vezes, só pra ter mais motivos pra falar de você.
+        </p>
+
+        <div class="line"></div>
+        <div class="heart"></div>
+
+        <div class="photo-wrapper">
+          <div class="photo-crop">
+            <img src="../img/pp2.jpg" alt="nós dois" class="pp2" />
+          </div>
+        </div>
+
+        <div class="audio-wrapper">
+          <p class="audio-label">um audio de um video perfeito 🎧</p>
+
+          <button class="audio-btn" id="playPauseBtn">
+            <span class="audio-icon" id="audioIcon">▶</span>
+
+            <div class="audio-wave">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+
+            <span class="audio-time">0:03</span>
+          </button>
+
+          <audio id="loveAudio">
+            <source src="mensagem.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+
+        <h1 class="title">espero que tenha ficado bom e que você goste</h1>
+
+        <div class="open-wrapper">
+          <label for="toggle" class="open-btn" onclick="scrollToEnd()">
+            <span class="open-btn-text-open">💌 clique aqui para abrir minha carta pra você 💗</span>
+            <span class="open-btn-text-close">✨ Fechar a carta</span>
+          </label>
+        </div>
+
+        <div class="letter">
+          <div id="end-letter"></div>
+
+        <p>
+          <strong class="strong-1">oi, minha preta linda maravilhosa cheirosa saborosa gostosa apetitosa na manteiga</strong>
+        </p>
+
+        <p>
+          eu poderia te mandar só um “eu te amo”, mas nada disso chega perto do tanto que eu sinto por você. então resolvi transformar tudo isso em uma carta um pouco diferente das quais eu ja fiz, pra tentar falar o quanto eu te amo e o quanto você é importante pra mim.
+        </p>
+
+        <p>
+          desde o dia 28/10, minha vida mudou completamente. eu que antes não me importava com nada que envolvesse sentimentos, passei a viver um turbilhão de emoções que eu nem sabia que existiam. com você, eu aprendi o que é amor de verdade, companheirismo, parceria e cumplicidade. você me mostrou que amar é mais do que um sentimento: é uma escolha diária de estar junto, de cuidar, de apoiar e de crescer juntos.
+        </p>
+
+        <p>
+          você é a pessoa que eu mais amei, amo e amarei na minha vida. não só você, mas todos os momentos juntos, todas as brincadeiras, passeios, problemas e filmes que nunca conseguimos assistir. (você é irresistível demais pra eu focar no filme)
+        </p>
+
+        <p>
+          quando uma cena de você rindo vem em minha mente, meus olhos se enchem de lágrimas e meu coração dispara, a vontade de chorar é inevitável. logo depois, vem aquela sensação de que eu deveria ter aproveitado e valorizado mais esses momentos. sinto falta de receber suas mensagens de bom dia, das nossas brincadeiras, de deitar no seu colo e sentir seu coração, de ouvir sua voz, de sentir seu abraço apertado e seus beijos longos. sinto falta de tudo em você, sinto falta de VOCÊ, minha preta.
+        </p>
+
+        <P>
+          antes de escrever qualquer texto ou carta para você, eu sempre imagino oque você estaria pensando ou sentindo ao ler. eu quero que você saiba que cada palavra aqui foi escrita com muito amor e sinceridade, pensando em como expressar o quanto você significa para mim. talvez você nem chegue a ler tudo isso, mas caso esteja lendo e chegou até aqui, saiba que cada linha foi escrita com o coração aberto, lágrimas e uma infindável saudade que quanto mais eu penso em você, mais saudades eu sinto.
+        </P>
+        
+        <p>
+          espero que essa carta consiga transmitir um pouco do que eu sinto por você. e que não sinta raiva ou fique brava por eu estar falando sobre nós mesmo tendo pedido para não falar mais. a verdade é que isso é impossível para mim, eu te amo ao ponto de chorar só de imaginar que o que tivemos possa ter acabado. eu sei que errei, e muito, mas eu estou disposto a fazer o que for preciso para reconquistar o seu amor e ter você de volta como minha namorada. eu quero ser o homem que você merece, aquele que te faz feliz, te escuta e te apoia em todos os momentos.
+        </p>
+
+        <p>
+          bem no começo quando a gente foi no thermas pela primera vez, eu estava planejando uma suepresa para você onde eu iria cantar uma parte de uma música, cheguei a praticar a letra mas não consegui, como você gostava de música pensei que você iria gostar. a musica se chama "Pras Damas-Oriente". essa música apareceu para mim esses dias e os sentimentos que ela trouxe foi demais e eu não aguentei, pois pra mim essa música é uma das mais marcantes.
+        </p>
+
+        <p>
+          <strong class="strong-2">eu te amo de uma maneira inexplicável;</strong>
+        </p>
+
+        <p>
+          lembra do começo quando íamos para a emescam e eu mostrava uma frase que dizia "eu e você contra o mundo"?. sei lá, podia ser eu e você contra todos esses problemas que estamos enfrentando. eu só quero você do meu lado, minha preta.
+        </p>
+
+        <p>
+          eu separei tanto filme e anime romantico pra gente ver, mesmo que você não acredite que eu seja capaz de assistir alguma coisa com você, isso é oque eu mais queria agora, estar abraçado com você vendo algo que gostamos juntos, sentindo você perto de mim e aproveitando cada segundo ao seu lado.
+        </p>
+
+        <p>
+          enquanto eu existir, não haverá ninguém tão louco de amor por quanto eu, alguém capaz de tudo por você. eu só quero passar os resto dos meus dias ao seu lado, vivendo e aprendendo a te amar cada vez mais e da forma correta.
+        </p>
+
+        <p>
+          caso amanhã eu não esteja mais aqui, quero que cada sorriso que um dia eu tirei de você te faça levar um pedacinho da minha eternidade nesse plano perto de você.
+        </p>
+        
+        <p>
+          porque caso amanhã eu não esteja mais aqui, quero que o tempo não apague o amor que um dia foi recíproco.
+        </p>
+
+        <p>
+          porque caso amanhã eu não esteja mais aqui, eu quero que saiba que você foi minha maior certeza num que só me apresentou dúvidas.
+        </p>
+
+        <p>
+          porque caso amanhã eu não esteja mais aqui, eu quero que você saiba que cada abraço que eu te dei, era minha maneira de te dizer que você sempre foi meu porto seguro.
+        </p>
+
+        <p>
+          caso amanhã eu não esteja mais aqui, eu quero que você saiba que em cada estrela que tem no céu, contém os sonhos e alegrias que eu desejo para você.
+        </p>
+
+        <p>
+          isso tudo é só uma pequena parte do que eu sinto por você. eu te amo mais do que palavras podem expressar, mais do que gestos podem mostrar, mais do que qualquer coisa nesse mundo. VOCÊ é tudo para mim, minha preta, então por favor, me dê uma chance de provar que eu posso ser o homem que você merece. 
+        </p>
+
+        <p>
+          podem existir mil obstáculos, mas nada fará com que meu amor por ti morra. Atravessarei até os maiores mares, mas não existirá água suficiente que afogue o amor que sinto por você.
+        </p>
+          
+        <p>
+          subirei até a montanha mais alta do mundo, só para te ver, e de lá gritarei seu nome para ver se me ouve, e se me ouvires, direi uma só frase: Eu te amo.
+        </p>
+
+        <p>
+          e quando o vento passar, levará consigo o que eu disse, e quando ele soprar em seu ouvido, escutarás junto ao vento: Eu te amo.
+        </p>
+
+        <p>
+          e toda vez que o vento soprar em seu ouvido, não será só apenas o vento, mas eu dizendo que eu te amo, minha pamonha.
+
+        </p>
+
+        <p>
+           (Sílvio César Rabêlo Lopes)
+        </p>
+
+        <p>
+          <strong class="strong-3">meu amor por você vai além de qualquer barreira. nada nesse mundo fará meu amor se esvair. eu te amo;</strong>
+        </p>
+
+        <p>
+          você ficou me devendo uma menininha com os seus olhos,
+        </p>
+
+        <p>
+          por favor, vamos voltar a ser felizes juntos.
+          <div class="signature">
+        por luiz, seu pamonha  
+        <img src="img/pamos.png" class="inline-img" alt="pamonha">
+      </div>
+        </p>
+
+        <div class="letter">
+        </div>
+
+        <div class="corner-photo corner-bottom-left">
+          <img src="img/foto1.jpg">
+        </div>
+
+        
+          <a href="index2.html" class="nav-btn">
+            💖 Clique aqui para ver algo especial
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function verificarSenha() {
+  const senhaDigitada = document.getElementById("senha").value;
+  const senhaCorreta = "2810";
+
+  const login = document.getElementById("login");
+  const conteudo = document.getElementById("conteudo");
+  const msg = document.getElementById("msg");
+
+  if (senhaDigitada === senhaCorreta) {
+  sessionStorage.setItem("logado", "true");
+  login.style.display = "none";
+  conteudo.style.display = "block";
+} else {
+  msg.innerText = "Senha incorreta 😭";
+  }
+}
+
+</script>
+
+<script>
+const audio = document.getElementById('loveAudio');
+const btn = document.getElementById('playPauseBtn');
+const icon = document.getElementById('audioIcon');
+
+btn.addEventListener('click', () => {
+  if (audio.paused) {
+    audio.play();
+    icon.textContent = '⏸';
+  } else {
+    audio.pause();
+    icon.textContent = '▶';
+  }
+});
+</script>
+
+<script>
+function scrollToEnd() {
+  setTimeout(() => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth'
+    });
+  }, 400); 
+}
+</script>
+
+  <script>
+  window.addEventListener("load", () => {
+    const login = document.getElementById("login");
+    const conteudo = document.getElementById("conteudo");
+
+    if (sessionStorage.getItem("logado") === "true") {
+      login.style.display = "none";
+      conteudo.style.display = "block";
+    }
+  });
+</script>
+
+
+
+
+</body>
+</html>

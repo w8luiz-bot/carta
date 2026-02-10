@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  background-image: url("img/suzume.jpg");
+  font-family: 'Poppins', sans-serif;
+  background-size: cover;
+}
+
+.nav-btn {
+  display: block;                 
+  margin: 30px auto 0;            
+  width: fit-content;
+  font-family: "Sacramento", cursive;
+  font-size: 22px;
+  text-decoration: none;
+  color: #ff4d6d;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-img: url('background.jpg');
+}
+
+.video-area {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.video-area video {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  border: 2px solid #f7f8f3;
+}
+
+.footer-text {
+  position: fixed;
+  bottom: -25px;
+  left: -10px;
+
+  font-family: 'Sacramento', cursive;
+  font-size: 30px;
+  color: #ff4d6d;
+  padding: 6px 14px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.);
+  z-index: 999;
+  line-height: 1.4;
+  animation: fadeInSoft 2.2s ease forwards;
+}
+
+.footer-text .song-line {
+  font-style: italic;
+  letter-spacing: 0.6px;
+}
+
+@keyframes fadeInSoft {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.login-area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.login-text {
+  font-family: 'Sacramento', cursive;
+  font-size: 26px;
+  color: #ff4d6d;
+  margin-bottom: 15px;
+}
+
+.login-input {
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 16px;
+  border: 2px solid #ff4d6d;
+  outline: none;
+  background: rgba(255, 255, 255, 0.5)
+}
+
+.login-input:focus {
+  border-color: #ff4d6d;
+  box-shadow: 0 0 0 2px rgba(255,77,109,0.3);
+}
+
+.erro-msg {
+  color: #ff4d6d;
+  margin-top: 10px;
+}
+
+.enter-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 77, 109, 0.5);
+  color: white;
+  cursor: pointer;
+  font-family: 'Sacramento', cursive;
+  font-size: 18px;
+}
+
+.dica {
+  display: block;
+  background: rgb(255 255 255 / 20%);
+  color: #ff4d6d;
+  padding: 8px 14px;
+  border-radius: 14px;
+  font-family: 'Sacramento', cursive;
+  font-size: 15px;
+  border: px solid #ff4d6d;
+  width: fit-content;
+  margin: 10px auto;
+
+}
+
